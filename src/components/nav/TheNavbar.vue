@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: relative;
+        position: fixed;
         top: 0;
         left: 0;
         height: 10vh;
