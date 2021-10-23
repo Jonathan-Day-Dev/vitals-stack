@@ -1,14 +1,14 @@
 <template>
   <TheNavbar />
-  <Welcome />
+  <main>
+    <router-view></router-view>
+  </main>
 </template>
 
 <script>
-import Welcome from './components/static/Welcome.vue';
 import TheNavbar from './components/nav/TheNavbar.vue';
 export default {
   components: {
-    Welcome,
     TheNavbar,
   }
 }

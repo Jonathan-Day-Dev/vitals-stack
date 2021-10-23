@@ -1,0 +1,9 @@
+Make a list of documentation sites and put in a component
+Make the navbar links to something
+Write a description for the app
+Work on GitHub readme file
+Attach a SQL database
+Write a component that will hold each step and update as you click forward
+Attach this component to the navbar
+Rewrite the Vue (etc) docs to include only what we need to create VITALS
+Make a more solid outline of each step

@@ -1,7 +1,8 @@
 <template>
     <div>
-        <a href="#">References</a>
-        <a href="#">Guide</a>
+        <router-link to="/">Home</router-link>
+        <router-link to="/ref">Reference</router-link>
+        <router-link to="/guide">Guide</router-link>
     </div>
 </template>
 
