@@ -64,7 +64,10 @@ export default {
 </script>
 
 <style scoped>
+div {
+  @apply ml-28;
+}
 ul {
-  @apply flex flex-wrap justify-evenly mt-20;
+  @apply flex flex-wrap justify-evenly mt-16;
 }
 </style>

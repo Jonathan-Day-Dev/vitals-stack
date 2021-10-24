@@ -1,32 +1,22 @@
 <template>
-    <div>
-        <router-link to="/">Home</router-link>
-        <router-link to="/ref">Reference</router-link>
-        <router-link to="/guide">Guide</router-link>
-    </div>
+  <div>
+    <NavLink url="/" name="Home" />
+    <NavLink url="/ref" name="Reference" />
+    <NavLink url="/guide" name="Guide" />
+  </div>
 </template>
 
 <script>
-    export default {
-
-    }
+import NavLink from "./NavLink.vue";
+export default {
+  components: {
+    NavLink,
+  },
+};
 </script>
 
 <style scoped>
-    div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 10vh;
-        width: 100%;
-        background-color: rgb(61, 61, 163);
-    }
-
-    a {
-        color: white;
-        font-size: 24px;
-    }
+div {
+  @apply flex flex-col justify-evenly items-center h-screen bg-blue-600;
+}
 </style>
