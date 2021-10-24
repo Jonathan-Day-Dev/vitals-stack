@@ -4,7 +4,7 @@ import App from './App.vue';
 import '../public/css/app.css';
 
 import Reference from './components/ref/Reference.vue';
-import Welcome from './components/static/Welcome.vue';
+import Welcome from './components/static/TheWelcome.vue';
 import Guide from './components/guide/Guide.vue';
 
 const router = createRouter({

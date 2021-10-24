@@ -1,17 +1,23 @@
 <template>
   <div>
-    <h1>This is the Reference.vue file</h1>
     <ul>
-      <li v-for="reference in referenceList" :key="reference.id">
-        <a :href="reference.docs" target="_blank">{{ reference.name }}
-        <p>{{ reference.desc }}</p></a>
-      </li>
+      <BaseRefContainer 
+        v-for="reference in referenceList" 
+        :key="reference.id"
+        :link="reference.docs"
+        :name="reference.name"
+        :desc="reference.desc"
+    />
     </ul>
   </div>
 </template>
 
 <script>
+import BaseRefContainer from "../ref/BaseRefContainer";
 export default {
+  components: {
+    BaseRefContainer,
+  },
   data() {
     return {
       referenceList: [
@@ -43,7 +49,7 @@ export default {
           id: "laravel",
           name: "Laravel",
           desc: "A PHP framework intended for the development of web applications following the model–view–controller",
-          docs: "https://laravel.com/",
+          docs: "https://laravel.com/docs/8.x",
         },
         {
           id: "sql",
@@ -53,24 +59,12 @@ export default {
         },
       ],
     };
-  },
+  }
 };
 </script>
 
 <style scoped>
-h1 {
-  @apply text-gray-300 mt-20 text-3xl text-center;
-}
-li {
-  @apply bg-gray-300 text-center mx-64 mt-5 rounded;
-}
-li:hover {
-    @apply bg-gray-600 text-gray-300;
-}
-li a {
-  @apply text-xl block;
-}
-li a p {
-    @apply text-lg;
+ul {
+  @apply flex flex-wrap justify-evenly mt-20;
 }
 </style>
