@@ -1,7 +1,7 @@
 <template>
   <section id="main-page">
     <TheNavbar />
-    <main class="w-full col-span-5 col-start-2">
+    <main id="main-el">
       <router-view></router-view>
       <div
         id="breakpoints"
@@ -38,6 +38,10 @@ export default {
 }
 
 #main-page {
-  @apply grid grid-cols-6 gap-2;
+  @apply md:grid md:grid-cols-6 md:gap-2;
+}
+
+#main-el {
+  @apply w-full flex justify-center items-center md:col-span-5 md:col-start-2;
 }
 </style>

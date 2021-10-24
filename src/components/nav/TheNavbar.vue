@@ -17,6 +17,6 @@ export default {
 
 <style scoped>
 div {
-  @apply flex flex-col justify-evenly items-center h-screen bg-blue-600;
+  @apply flex md:flex-col justify-evenly items-center h-14 sm:h-10 w-full md:h-screen bg-blue-600;
 }
 </style>

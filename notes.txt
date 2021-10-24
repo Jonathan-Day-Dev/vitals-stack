@@ -1,4 +1,3 @@
-Write a description for the app
 Work on GitHub readme file
 Attach a SQL database
 Write a component that will hold each step and update as you click forward

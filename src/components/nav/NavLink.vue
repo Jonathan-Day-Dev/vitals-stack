@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
 a {
-    @apply text-gray-300 text-xl w-3/4 px-2 py-3;
+    @apply text-gray-300 text-xl px-2 py-3;
 }
 
 a:hover {

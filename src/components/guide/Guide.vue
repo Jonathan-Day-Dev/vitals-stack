@@ -1,11 +1,21 @@
 <template>
     <div>
-        <h1>This is the Guide.vue file</h1>
+        <Step 
+            stepNum="1" 
+            instruction= "Set up the Laravel project using composer" 
+            location="Terminal:"
+            codeBlock="composer create-project --prefer-dist laravel/laravel <- project name ->"
+        />
     </div>    
 </template>
 
 <script>
-
+import Step from './Step.vue';
+export default {
+    components: {
+        Step
+    }
+}
 </script>
 
 <style scoped>
