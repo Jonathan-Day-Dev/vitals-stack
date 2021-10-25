@@ -2,7 +2,7 @@
     <div>
         <Step 
             stepNum="1" 
-            instruction= "Set up the Laravel project using composer" 
+            instruction= "Set up Laravel using composer" 
             location="Terminal:"
             codeBlock="composer create-project --prefer-dist laravel/laravel <- project name ->"
         />
